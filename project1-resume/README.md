@@ -8,3 +8,22 @@ Features:
 - Light/dark theme toggle persisted in localStorage
 
 Open `portfolio.html` in a browser to try. No server required.
+
+## Project Structure
+
+```text
+project1-resume/
+├── assets/
+│   ├── ABOUT IMAGE.webp
+│   ├── MY IMAGE (dark mode).png
+│   └── MY IMAGE (light mode).png
+├── login/
+│   ├── login.css
+│   ├── login.html
+│   └── login.js
+├── portfolio/
+│   ├── portfolio.css
+│   ├── portfolio.html
+│   └── portfolio.js
+└── README.md
+```
