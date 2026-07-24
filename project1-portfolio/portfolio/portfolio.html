@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Frontend Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script>
+        if (!localStorage.getItem('loggedIn')) {
+            document.documentElement.style.display = 'none';
+            window.location.href = '../login/login.html';
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#" id="logoutBtn" class="nav-link logout-link">Logout</a></li>
+                </ul>
+                <div class="theme-buttons">
+                    <button class="theme-btn light-btn" id="lightModeBtn" title="Light Mode">Light</button>
+                    <button class="theme-btn dark-btn active" id="darkModeBtn" title="Dark Mode">Dark</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="../assets/MY IMAGE (light mode).png" alt="Profile Picture" class="avatar avatar-light">
+                    <img src="../assets/MY IMAGE (dark mode).png" alt="Profile Picture" class="avatar avatar-dark"
+                        style="display: none;">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">ROSHAN KUMAR</span></h1>
+                    <p class="hero-subtitle">Frontend Developer & Creative Designer</p>
+                    <p class="hero-description">
+                        Front‑end developer crafting responsive, high‑performance web experiences with clean code and
+                        modern design.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#contact" class="btn btn-secondary">View My Work on GitHub</a>
+                    </div>
+                    <p class="internship-info">Currently interning at <span class="highlight">IBM</span>, working with
+                        the MERN stack to build responsive web applications and scalable backend solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I’m a computer science student and full‑stack developer with hands‑on experience building
+                        responsive web apps. Currently interning at IBM, I work with the MERN stack to design and
+                        implement user‑centered interfaces and maintainable backends. I focus on writing clean, modular
+                        code, optimizing performance, and following modern design and accessibility practices. Outside
+                        of coding, I’m an avid One Piece fan and enjoy turning ideas into small projects that sharpen my
+                        skills. I’m eager to collaborate on real‑world problems and grow toward roles in frontend or
+                        full‑stack development.
+                    </p>
+
+
+                </div>
+                <div class="about-image">
+                    <img src="../assets/ABOUT IMAGE.webp" alt="About Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <p class="resume-meta">2024 – Present</p>
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <p class="resume-institution">Maharaja Agrasen Institute Of Technology</p>
+                    <p class="resume-text">
+                        I am pursuing a degree in Computer Science and Technology from Maharaja Agrasen Institute of
+                        Technology (MAIT), Delhi, with a current CGPA of 7.8. Throughout my studies, I have built a
+                        strong foundation in programming, data structures, algorithms, and web technologies.Relevant
+                        coursework includes Data Structures & Algorithms, Database Management Systems, Object‑Oriented
+                        Programming, Web Development, and Software Engineering. I actively apply my academic knowledge
+                        in personal projects and internships, and I’m focused on continuously improving my coding and
+                        problem‑solving skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="resume-section resume-section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <p class="resume-meta">Current</p>
+                    <h3>Intern – IBM</h3>
+                    <p class="resume-institution">Frontend / MERN Stack Intern</p>
+                    <p class="resume-text">
+                        As a Full‑Stack Developer Intern at IBM, I contributed to building responsive, production‑ready
+                        web applications using the MERN stack while improving both user experience and code quality. I
+                        worked closely with the team to develop UI components, integrate APIs, and fix bugs in a
+                        collaborative environment.
+                    </p>
+                    <ul class="resume-list">
+                        <li>Developed responsive UI components</li>
+                        <li>Worked with the MERN stack</li>
+                        <li>Improved user experience and code quality</li>
+                    </ul>
+                </div>
+                <div class="resume-card">
+                    <p class="resume-meta">Personal Practice Projects</p>
+                    <h3>Personal Projects</h3>
+                    <p class="resume-institution">Self-Driven</p>
+                    <p class="resume-text">
+                        I have built several personal projects to strengthen my skills in web development and gain
+                        hands‑on experience with real‑world use cases. These projects include interactive portfolio
+                        websites, responsive landing pages, and small web apps that showcase my proficiency with HTML,
+                        CSS, JavaScript, and the MERN stack. Anyone interested in exploring my code, architecture, and
+                        implementation details can visit my GitHub profile, where I actively maintain and document my
+                        projects.
+                    </p>
+                    <ul class="resume-list">
+                        <li>Built responsive portfolio and landing pages using HTML, CSS, and JavaScript.</li>
+                        <li>Designed clean, responsive layouts</li>
+                        <li>Published all projects on GitHub with clean code and READMEs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Responsive Design</span>
+                        <span class="skill-badge">Flexbox & Grid</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Technologies</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">Webpack</span>
+                        <span class="skill-badge">Chrome DevTools</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Core Competencies</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">UI/UX Design</span>
+                        <span class="skill-badge">Team Collaboration</span>
+                        <span class="skill-badge">Project Management</span>
+                        <span class="skill-badge">Communication</span>
+                        <span class="skill-badge">Attention to Detail</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-cards">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="contact-subtitle">
+                Have a question or want to work together? I'd love to hear from you!
+            </p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:roshankum1507@gmail.com">roshankum1507@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>DELHI , INDIA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">💼</div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a
+                                    href="https://www.linkedin.com/in/roshankumar-webdev/">https://www.linkedin.com/in/roshankumar-webdev/</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🐙</div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/roshankum1507-web">https://github.com/roshankum1507-web</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="You can write your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="admin" class="admin">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Admin Panel</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div id="adminLoginView" class="admin-login-view">
+                <form id="adminForm" class="admin-form">
+                    <div class="form-group">
+                        <label for="adminUsername">Username</label>
+                        <input type="text" id="adminUsername" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Password</label>
+                        <div class="password-field">
+                            <input type="password" id="adminPassword" placeholder="Enter password" required>
+                            <button type="button" id="adminPwdToggle" class="pwd-toggle" aria-pressed="false"
+                                aria-label="Show password">Show</button>
+                        </div>
+                    </div>
+                    <div id="adminError" class="error"></div>
+                    <button type="submit" class="btn btn-primary">Login to Admin</button>
+                </form>
+            </div>
+
+            <div id="adminDashboardView" class="admin-dashboard-view" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h3>📧 Messages Received: <span id="messageCount">0</span></h3>
+                    <button id="adminLogoutBtn" class="btn btn-secondary">Logout</button>
+                </div>
+                <div id="messagesContainer" class="messages-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-heading">Let's Create Something Amazing Together</p>
+            <p class="footer-text">I'm always interested in hearing about new projects and opportunities. Feel free to
+                reach out through the contact form or connect with me on LinkedIn and GitHub.</p>
+            <p class="footer-credit"> My Portfolio, Designed & Built by Roshan</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+
+    <div id="logoutToast" class="toast hidden" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-body">
+            <div id="toastMessage">Are you sure you want to logout?</div>
+            <div class="toast-actions">
+                <button id="toastLogoutBtn" class="btn btn-primary">Logout</button>
+                <button id="toastCancelBtn" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
